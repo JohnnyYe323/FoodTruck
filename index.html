@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <ul id="nav">
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#quien">QUIEN SOMOS</a></li>
+        <li><a href="#menu">MENÚ</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+
+    <div class="header">
+        <h1>Food Truck</h1>
+    </div>
+
+    <div class="row" id="quien">
+        <div class="two-column">
+            <h1>¿Quien somos?</h1>
+            <p>Somos una pareja de cocineros que se cansaron se la monotonía del trabajo y se aventuraron en buscar algo
+                diferente.</p>
+            <p>En nuestra busqueda nos topamos con la idea de viajar y cocinar a la vez, asi que nos preparamos y
+                compramos una furgoneta para adaptarla al viaje que nos esperaba.</p>
+            <p>Ahora dos años después tenemos varias food trucks en diferentes ciudades mientras que nosotros seguimos
+                viajando y haciendo de comer en nuestra primera food truck.</p>
+        </div>
+        <div class="two-column">
+            <img src="img/people.jpg">
+        </div>
+    </div>
+
+    <div id="menu">
+        <br>
+        <h1>MENÚ</h1>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <a href="view/menuFrio.html"><img src="img/menufrio.jpg" style="width:100%"></a>
+                <a href="view/menuFrio.html"><div class="text">Menú frío</div></a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="view/menuCaliente.html"><img src="img/menucaliente.jpg" style="width:100%"></a>
+                <a href="view/menuCaliente.html"><div class="text">Menú caliente</div></a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="view/menuBebidas.html"><img src="img/menubebidas.jpg" style="width:100%"></a>
+                <a href="view/menuBebidas.html"><div class="text">Bebidas</div></a>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script type="text/javascript" src="js/js.js"></script>
+    </div>
+
+    <div class="row" id="contacto">
+        <div class="four-column">
+            <img src="img/logo.png">
+        </div>
+        <div class="four-column">
+            <p><strong id="titulo">Encuéntranos</strong></p>
+            <p>Gran Via de les Corts Catalanes, 615, 08015 Barcelona</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.043360243211!2d2.169602476911546!3d41.39025840472319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f20facd207%3A0x7e6d65bdcb8f31e3!2sGran%20Via%20de%20les%20Corts%20Catalanes%2C%20615%2C%2008015%20Barcelona!5e0!3m2!1ses!2ses!4v1667049123670!5m2!1ses!2ses"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="four-column">
+            <p><strong id="titulo">A domicilio</strong></p>
+            <a target="_blank" href="https://glovoapp.com/"><img src="img/glovo.jpg"></a>
+            <a target="_blank" href="https://www.ubereats.com/es"><img src="img/ubereats.png"></a>
+        </div>
+        <div class="four-column">
+            <p><strong id="titulo">Contacto</strong></p>
+            <p><strong>Local:</strong></p>
+            <p>Gran Via de les Corts Catalanes, 615</p>
+            <p>08015 Barcelona</p>
+            <p><strong>Correo:</strong></p>
+            <p>foodtruck@gmail.com</p>
+            <p><strong>Teléfono:</strong></p>
+            <p>682 66 17 84</p>
+        </div>
+    </div>
+    <br>
+</body>
+
+</html>

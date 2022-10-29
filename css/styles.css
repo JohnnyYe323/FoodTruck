@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* NAV */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 15%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+  background-color: #007EA7;
+}
+
+li {
+  float: left;
+  width: 25%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* HEADER */
+.header {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 8%;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 100px;
+  padding: 10%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+/* QUIEN */
+.two-column {
+  float: left;
+  width: 50%;
+  padding: 4%;
+}
+
+.two-column h1 {
+  font-size: 40px;
+}
+
+.two-column p {
+  font-size: 17px;
+}
+
+.two-column img {
+  width: 100%;
+}
+
+/* MENU */
+#menu {
+  background-color: #00A7E1;
+}
+
+#menu h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 43.5%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+/* FOOTER */
+.four-column {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+#contacto img {
+  width: 50%;
+}
+
+#titulo {
+  font-size: 20px;
+}
+
+/* MENU FRIO */
+#menuFrio {
+  background-color: #00171F;
+  color: white;
+}
+
+#menuFrio img {
+  width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+  .two-column {
+    width: 100%;
+  }
+
+  .four-column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .four-column {
+    width: 100%;
+  }
+
+  li {
+    width: 100%;
+  }
+}

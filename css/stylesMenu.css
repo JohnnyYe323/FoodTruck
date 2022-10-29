@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* HEADER */
+.header {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.encabezado {
+    font-size: 50px;
+    padding: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+}
+
+.encabezado a {
+    text-decoration: none;
+    color: white;
+}
+
+/* QUIEN */
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 4%;
+}
+
+.two-column h1 {
+    font-size: 40px;
+}
+
+.two-column p {
+    font-size: 17px;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+/* MENU */
+#menu {
+    background-color: #00A7E1;
+}
+
+#menu h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* FOOTER */
+.four-column {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#contacto img {
+    width: 50%;
+}
+
+#titulo {
+    font-size: 20px;
+}
+
+/* MENU FRIO */
+#menu {
+    background-color: #00171F;
+    color: white;
+}
+
+#menu img {
+    width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+    .two-column {
+        width: 100%;
+    }
+
+    .four-column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .four-column {
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
+    }
+}
